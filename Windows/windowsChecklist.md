@@ -1,4 +1,4 @@
-[winlogo]:https://icons8.com/icon/22979/microsoft.svg
+[winlogo]:./Images/icons8-microsoft-50.png
 
 
 # Basic Windows Checklist
@@ -172,10 +172,10 @@ If the password specified in your user documentation meets the requirements, you
 ## File Shares:
 
 * Open File Share Console
-**<kbd>![winlogo]</kbd>** &rarr; type:
-```
-fsmgmt.msc
-```
+
+
+	* <kbd>![winlogo]</kbd> + **R** &rarr; fsmgmt.msc
+
 
 ### Shares:
 
