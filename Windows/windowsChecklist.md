@@ -1,4 +1,4 @@
-[winlogo]:./Images/icons8-microsoft-50.webp
+[winlogo]:./Images/icons8-microsoft-50.png
 
 
 # Basic Windows Checklist
