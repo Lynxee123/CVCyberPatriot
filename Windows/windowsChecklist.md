@@ -1,4 +1,4 @@
-[winlogo]:./Images/windows.png
+[winlogo]:./Images/microsoft.png
 
 
 # Basic Windows Checklist
