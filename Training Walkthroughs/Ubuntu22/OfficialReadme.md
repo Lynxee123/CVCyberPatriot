@@ -77,4 +77,4 @@ vanessa
  * Some security settings may prevent the Stop Scoring application from running. If this happens, the safest way to stop scoring is to suspend the virtual machine. You should NOT power on the VM again before deleting.
 
 ## ANSWER KEY
- * This is an introductory image with an answer key avaliable [here](https://cpxvi.s3.amazonaws.com/cpxvi_tr/CPXVI_Ubuntu22_Training_Answer_Key.pdf).
+ * This is an introductory image with an answer key avaliable [here](./CPXVI_Ubuntu22_Training_Answer_Key.pdf).
