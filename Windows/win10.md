@@ -7,7 +7,7 @@ Refer to README.md for more information
 
 This is a gui walkthrough which you may use as a guide when developing automation scripts
 
-Complete these steps **in order** for best results
+Complete these steps **in order** for best results (If possible, script all of them to make your life easier)
 
 ## Forensics Questions: 
 
@@ -20,9 +20,11 @@ This usually hinders progress so get it done first
 **(even if it's hard, you'll learn more from searching than you will from giving up)**
 
 ## Windows Update:
-
-Settings &rarr; Windows Updates &rarr; Check for Updates
-* (Don't skip no matter how long it takes)  
+* Press the Windows Key and type **settings**
+* Press enter to open settings
+* Select **Windows Update**
+* Press **Check for Updates**
+	* (Don't skip no matter how long it takes)  
   
 
 Make sure it completes before you move on (will make everything else less stressful)
@@ -31,16 +33,26 @@ While waiting for windows update, take the time to document all the users and ad
 
 ## Firewall:
 
-Enable the firewall on all network types  
-* allow any specified services or ports from the readme  
-* deny unnecessary services or malicious ports
+* Press the Windows key
+* Type **Windows Security** and press enter to open the Windows Security settings
+* Click on **Firewall & Network Protection**
+* Click **Turn On**, then select **Yes**
+
+## Remote Assistance:
+
+* Press the Windows key + R to open the run dialog.
+* Type **Control** and press enter to open Control Panel
+* Click on **System**
+* Click **Remote Settings**
+* Uncheck **Allow Remote Assistance connections to this computer**
+* Click **OK**
 	
 ## Account Policy
 	
 #### Password Policy:
 
 * Enforce Password History: **24 passwords remembered**  
-* Maximum password age: **30 days**  
+* Maximum password age: **90 days**  
 * Minimum password age: **3 days**  
 * Minimum password length: **14 characters**  
 * Password must meet complexity requirements: **Enabled**  
@@ -48,9 +60,8 @@ Enable the firewall on all network types
 
 #### Account Lockout Policy:
 
-* Account Lockout Threshold: play with it till you get points (usually 5-10)  
-* Account lockout duration and reset lockout: auto set to 30 minutes after you set Lockout Threshold  
-
+* Account Lockout Threshold: 10 
+* Account lockout duration and reset lockout: 30 Minutes
 ## Local Policies
 
 #### Audit Policy
@@ -119,11 +130,8 @@ Enable the firewall on all network types
 
 ## Users:
 
-* Open User Management Console
-**win+r** &rarr; type:
-	```
-	lusrmgr.msc
-	```
+* Press the Windows key + R to open the Run Dialogue
+* Type **lusrmgr.msc** to open the user management console
 
 ### Remove Unauthorized Users (Documented during windows update):
 
