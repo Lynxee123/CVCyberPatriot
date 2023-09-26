@@ -22,7 +22,7 @@ Candace Flynn was recently inducted into the Fireside Girls. Please add the user
 
 All authorized users must be able to log in remotely using SSH. Therefore, sshd is a critical service and needs to remain enabled.
 
-Critical Services:
+## Critical Services:
  * sshd
 
 ## AUTHORIZED ADMINISTRATORS AND USERS
