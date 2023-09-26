@@ -12,7 +12,7 @@ Complete these steps **in order** for best results (If possible, script all of t
 ## Forensics Questions: 
 
 One Question usually involves encryption/cipher.  
-Rever to this webpage for decryption:
+Refer to this webpage for decryption:
 [cryptii](https://cryptii.com)
 
 Other questions involve searching for malicious files and services  
@@ -20,37 +20,30 @@ This usually hinders progress so get it done first
 **(even if it's hard, you'll learn more from searching than you will from giving up)**
 
 ## Windows Update:
-* Press the Windows Key and type **settings**
-* Press enter to open settings
-* Select **Windows Update**
-* Press **Check for Updates**
+* **Windows Key** &rarr; **Settings** &rarr; **Windows Update** &rarr; **Check for Updates** 
 	* (Don't skip no matter how long it takes)  
   
 
 Make sure it completes before you move on (will make everything else less stressful)
 
-While waiting for windows update, take the time to document all the users and administrators from the readme, as well as any passwords they do not want you to change. You will have to remove accounts laters as well as change account passwords so that they comply with the password policies you will setup
+While waiting for windows update, take the time to document all the users and administrators from the readme, as well as any passwords they do not want you to change. You will have to remove accounts laters as well as change account passwords so that they comply with the password policies you will setup.
 
 ## Firewall:
 
-* Press the Windows key
-* Type **Windows Security** and press enter to open the Windows Security settings
-* Click on **Firewall & Network Protection**
-* Click **Turn On**, then select **Yes**
+* **Windows Key** &rarr; **Windows Security** &rarr; **Firewall & Network Protection** &rarr; **Turn On**
 
 ## Remote Assistance:
 
-* Press the Windows key + R to open the run dialog.
-* Type **Control** and press enter to open Control Panel
-* Click on **System**
-* Click **Remote Settings**
-* Uncheck **Allow Remote Assistance connections to this computer**
-* Click **OK**
+* **Windows Key + R** &rarr; **control** &rarr; **System** &rarr; **Remote Settings** &rarr; **Allow Remote Assistance connections to this computer** (uncheck) &rarr; **Okay**
 	
 ## Account Policy
-	
+
+* **Windows Key + R** &rarr; **secpol.msc**
+* Under **Account Policies**
+
 #### Password Policy:
 
+* Under **Password Policy**
 * Enforce Password History: **24 passwords remembered**  
 * Maximum password age: **90 days**  
 * Minimum password age: **3 days**  
@@ -60,9 +53,12 @@ While waiting for windows update, take the time to document all the users and ad
 
 #### Account Lockout Policy:
 
-* Account Lockout Threshold: 10 
-* Account lockout duration and reset lockout: 30 Minutes
+* Under **Acount Lockout Policy**
+* Account Lockout Threshold: **10**
+* Account lockout duration and reset lockout: **30 Minutes**
 ## Local Policies
+
+* Under **Local Policy**
 
 #### Audit Policy
 
@@ -72,8 +68,8 @@ While waiting for windows update, take the time to document all the users and ad
 
 * Anything out of place (user's acting as part of the operating system, etc), remove them and document your findings
 
-#### Security Options:
-
+## Security Options:
+* Under **Security Options**
 ### Accounts:
 
 * Administrator Account status: **Disabled**
@@ -130,12 +126,11 @@ While waiting for windows update, take the time to document all the users and ad
 
 ## Users:
 
-* Press the Windows key + R to open the Run Dialogue
-* Type **lusrmgr.msc** to open the user management console
+* **Windows Key + R** &rarr; **lusrmgr.msc**
 
 ### Remove Unauthorized Users (Documented during windows update):
 
-* **Users &rarr; right click on user &rarr; select Delete**
+* **Users &rarr; right click on user &rarr; Delete**
 
 ### Add new users (Documented during windows update):
 
@@ -145,8 +140,7 @@ While waiting for windows update, take the time to document all the users and ad
 
 * **Users &rarr; right click on user &rarr; change password**
 	* (**example: P@ssword123456789**)
-	* Create a password that complies with the password complexity requirements
-If the password specified in your user documentation meets the requirements, you don't have to change it (unless told to in the readme, otherwise it is good to change it since it will make logging in easer during your process)
+ 	* Password must follow complexity rules set earlier 	
 
 * **Users &rarr; right click on user &rarr; Properties**
 
@@ -179,23 +173,24 @@ If the password specified in your user documentation meets the requirements, you
 
 ## File Shares:
 
-* Open File Share Console
-
-
-	* <kbd>![winlogo]</kbd> + **R** &rarr; fsmgmt.msc
-
+* **Windows Key + R** &rarr; **fsmgmt.msc**
 
 ### Shares:
 
-* Unshare any folders that are not required or specified in the readme
-
-**Shares &rarr; right click on share &rarr; remove share (exception: any and all shares with a "$" at the end of the name)**
+* **Shares** &rarr; right click on share &rarr; stop sharing
+	* Exceptions: shares ending in "$" 
 
 ### Sessions:
 
-* Disconnect all sessions
+* **Top Left** &rarr; **Disconnect All Sessions**
+* 
+## Services
 
+* **Windows Key + R** &rarr; **services** &rarr; **right click on service** &rarr; properties &rarr; change as applicable
 
+* Bitlocker Drive Encryption Service: **stopped/disabled**
+* Bluetooth Support Service: **stopped/disabled**
+* DHCP Client: **automatic/running**
 
 	
 
