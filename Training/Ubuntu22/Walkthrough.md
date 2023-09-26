@@ -73,7 +73,9 @@ $ locate '*.mp3'
 
 The audio files are all in the `/home/linda/Music` folder.
 
-## Vulnerabilities
+## Remove unauthorized users
+
+> Points: 6
 
 ### Removed unauthorized user balloony
 
@@ -86,6 +88,10 @@ To remove the user you can run the following command:
 ```bash
 $ deluser balloony
 ```
+
+# Remove unauthorized administrators
+
+> Points: 12
 
 ### User doofenshmirtz is not an administrator
 
@@ -111,6 +117,10 @@ There are a couple of ways to remove the user from being an administrator:
 
  - Open Settings &rarr; Users, click `Unlock` at the top, select the `lawrence` user, and toggle off `Administrator`
 
+## Change insecure passwords
+
+> Points: 6
+
 ### Changed insecure password for user pinky
 
 > Points: 6
@@ -125,35 +135,9 @@ There are a couple of ways to change their password:
 
 You should note this password in a document so you can still access the account.
 
-### Added candace to group firesidegirls
-
-> Points: 8
-
-The README requests that you add `candace` to the `firesidegirls` group.
-
-You can run the following command to add `candace` to `firesidegirls`:
-
-```bash
-$ usermod -aG firesidegirls candace
-```
-
-### Uncomplicated Firewall (UFW) protection has been enabled
+## Disable services
 
 > Points: 6
-
-To determine if UFW is disabled run the command:
-```bash
-$ ufw status
-
-Status: inactive
-```
-
-You can run the following command to enable the firewall:
-```bash
-$ ufw enable
-
-Firewall is active and enabled on system startup
-```
 
 ### Nginx service has been disabled or removed
 
@@ -180,13 +164,9 @@ To remove the `nginx` package from the system:
 $ apt purge nginx
 ```
 
-### The system automatically checks for updates daily
+## Update applications
 
-> Points: 6
-
-You can solve this problem by doing the following:
-
-Software & Updates &rarr; Updates &rarr; Automatically check for updates, and select `Daily`
+> Points: 10
 
 ### Firefox has been updated
 
@@ -209,6 +189,10 @@ To update Thunderbird you can use the command:
 $ apt update
 $ apt upgrade
 ```
+
+## Remove prohibited software and files
+
+> Points: 18
 
 ### Prohibited MP3 files are removed
 
@@ -250,6 +234,27 @@ To remove the wireshark package use the following command:
 $ apt remove wireshark
 ```
 
+## Security
+
+> Points: 18
+
+### Uncomplicated Firewall (UFW) protection has been enabled
+
+> Points: 6
+
+To determine if UFW is disabled run the command:
+```bash
+$ ufw status
+
+Status: inactive
+```
+
+You can run the following command to enable the firewall:
+```bash
+$ ufw enable
+
+Firewall is active and enabled on system startup
+
 ### SSH root login has been disabled
 
 > Points: 6
@@ -263,6 +268,30 @@ $ nano /etc/ssh/sshd_config
 Change the line `PermitRootLogin yes` to `PermitRootLogin no`
 
 Press ^X, Y, Enter to save and exit.
+
+### The system automatically checks for updates daily
+
+> Points: 6
+
+You can solve this problem by doing the following:
+
+Software & Updates &rarr; Updates &rarr; Automatically check for updates, and select `Daily`
+
+## Other
+
+> Points: 8
+
+### Added candace to group firesidegirls
+
+> Points: 8
+
+The README requests that you add `candace` to the `firesidegirls` group.
+
+You can run the following command to add `candace` to `firesidegirls`:
+
+```bash
+$ usermod -aG firesidegirls candace
+```
 
 ## Penalties
 
